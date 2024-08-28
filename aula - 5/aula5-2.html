@@ -1,0 +1,117 @@
+<!DOCTYPE html> <!-- Declara que o documento usa HTML5.-->
+<html lang="en"> <!--Inicia o documento HTML e define o idioma como inglês.-->
+<head> <!-- Contém metadados e informações de configuração da página.-->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva, ajustando-se ao tamanho da tela.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Instrui o navegador a usar o modo mais recente de renderização, evitando modos de compatibilidade antigos.-->
+    <meta name="description" content="Esse é meu primeiro site!"> <!--Fornece uma breve descrição da página, usada por motores de busca.-->
+    <meta name="keywords" content="front-end, html, css, javascript"> <!-- Lista palavras-chave relevantes para o conteúdo.-->
+    <meta name="author" content="Mirka Juliet"> <!-- Indica o autor da página.-->
+    <title>Document</title> <!-- Define o título da página, exibido na aba do navegador.-->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* O seletor universal (*) aplica a regra a todos os elementos da página.
+           "box-sizing: border-box;" ajusta o cálculo de largura e altura dos elementos
+           para incluir padding e bordas dentro das dimensões especificadas, 
+           facilitando o controle do layout. */
+    
+        body {
+            margin: 0;
+        }
+        /* Define que o corpo da página não terá nenhuma margem externa, 
+           removendo o espaçamento padrão ao redor do conteúdo da página. */
+    
+        .header {
+            background-color: gray;
+            padding: 20px;
+            text-align: center;
+        }
+        /* A classe ".header" estiliza a seção de cabeçalho da página.
+           "background-color: gray;" define a cor de fundo como cinza.
+           "padding: 20px;" adiciona um espaçamento interno de 20 pixels ao redor do conteúdo.
+           "text-align: center;" centraliza o texto dentro do cabeçalho. */
+    
+        .menu {
+            background-color: #333;
+            overflow: hidden;
+        }
+        /* A classe ".menu" estiliza a barra de navegação ou menu da página.
+           "background-color: #333;" define a cor de fundo do menu como cinza escuro.
+           "overflow: hidden;" impede que o conteúdo do menu transborde,
+           garantindo que ele seja contido dentro do elemento. */
+    
+        menu a {
+            color: white;
+            padding: 14px 16px;
+            float: left;
+            display: block;
+            text-decoration: none;
+        }
+        /* Estiliza os links dentro do menu. 
+           "color: white;" define a cor do texto dos links como branca.
+           "padding: 14px 16px;" adiciona espaçamento interno ao redor do texto dos links.
+           "float: left;" alinha os links à esquerda, criando um layout horizontal.
+           "display: block;" faz com que os links ocupem todo o espaço do contêiner pai.
+           "text-decoration: none;" remove o sublinhado padrão dos links. */
+    
+        .coluna-50 {
+            float: left;
+            width: 50%;
+            padding: 15px;
+        }
+        /* A classe ".coluna-50" é usada para criar uma coluna que ocupa 50% da largura do contêiner pai.
+           "float: left;" faz com que as colunas flutuem à esquerda, permitindo que outras colunas
+           flutuem ao lado delas.
+           "width: 50%;" define que a coluna ocupa 50% da largura do contêiner.
+           "padding: 15px;" adiciona um espaçamento interno de 15 pixels ao redor do conteúdo da coluna. */
+    </style>
+    
+</head>
+
+<body> <!-- Contém o conteúdo visível da página.-->
+
+    <header class="header">
+        <!-- A tag <header> define a seção de cabeçalho da página, que geralmente contém títulos e informações de introdução. 
+             A classe "header" pode ser usada para aplicar estilos CSS específicos ao cabeçalho. -->
+        <h1>Topo</h1>
+        <!-- A tag <h1> é usada para definir o título principal do cabeçalho. -->
+        <p>Aqui a parte do topo</p>
+        <!-- A tag <p> é usada para adicionar um parágrafo de texto dentro do cabeçalho. -->
+    </header>
+    
+    <nav class="menu">
+        <!-- A tag <nav> define uma seção de navegação na página, normalmente usada para links de menu.
+             A classe "menu" pode ser usada para aplicar estilos CSS específicos à barra de navegação. -->
+        <a href="index.html">Link</a>
+        <a href="index.html">Link</a>
+        <a href="index.html">Link</a>
+        <a href="index.html">Link</a>
+        <!-- As tags <a> criam links clicáveis. O atributo "href" define o destino do link.
+             Neste caso, todos os links apontam para a página "index.html". -->
+    </nav>
+    
+    <section class="coluna-50">
+        <!-- A tag <section> define uma seção de conteúdo na página. 
+             A classe "coluna-50" provavelmente será usada para aplicar estilos CSS que definem a largura da coluna como 50% da largura total da página, criando um layout de duas colunas. -->
+        <h2>Coluna</h2>
+        <!-- A tag <h2> é usada para definir um subtítulo dentro desta seção. -->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, quibusdam. Cum consequuntur veritatis esse veniam, excepturi praesentium ullam fuga accusantium illo rerum minus quis, placeat omnis, assumenda est. Veniam, sapiente.</p>
+        <!-- A tag <p> adiciona um parágrafo de texto dentro da seção. 
+             Aqui é usado um texto genérico conhecido como "Lorem ipsum". -->
+    </section>
+    
+    <section class="coluna-50">
+        <!-- Esta é a segunda seção com a mesma classe "coluna-50", o que sugere que as duas seções estão lado a lado,
+             cada uma ocupando 50% da largura da página, criando um layout de duas colunas. -->
+        <h2>Coluna</h2>
+        <!-- Subtítulo da segunda coluna. -->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, quibusdam. Cum consequuntur veritatis esse veniam, excepturi praesentium ullam fuga accusantium illo rerum minus quis, placeat omnis, assumenda est. Veniam, sapiente.</p>
+        <!-- Parágrafo de texto genérico dentro da segunda coluna. -->
+    </section>
+    
+    
+    
+</body>
+</html>
