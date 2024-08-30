@@ -20,8 +20,3 @@ h2{
     background-position: center;
 }
 
-.exemplo-back{
-    height: 500px;
-    background-image: gray url("../img/background.jpg") no-repeat center;
-    background-size: cover;
-}
